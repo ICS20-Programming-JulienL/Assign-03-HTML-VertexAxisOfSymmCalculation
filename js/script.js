@@ -6,11 +6,11 @@
 
 "use strict";
 
-function calculateVolumeSurfaceArea() {
+function calculateVertexAxisOfSymm() {
   // get coefficient a
   let coefficientA= parseFloat(document.getElementById("coefficient-a").value)
 
-	// get coefficient b
+	// get coefficient a
   let coefficientB= parseFloat(document.getElementById("coefficient-b").value)
 
   // get constant c
@@ -23,8 +23,9 @@ function calculateVolumeSurfaceArea() {
   let yCoordinate = coefficientA*axisOfSymm**2+coefficientB*axisOfSymm+constantC
 
   // display the axis of symmetry and y-coordinate of the vertex
-  document.getElementById('answer1').innerHTML = "The volume of your rectangular prism is " +axisOfSymm.toFixed(2)+"cm<sup>3</sup>.";
+  document.getElementById('answer1').innerHTML = "The axis of symmetry of your equation is " +axisOfSymm.toFixed(2)+".";
   // display how much the government will pay
-  document.getElementById('answer2').innerHTML = "The surface area of your rectangular prism is "+yCoordinate.toFixed(2)+"cm<sup>2</sup>."; 
+  document.getElementById('answer2').innerHTML = "The y-coordinate of the vertex of your equation is "+yCoordinate.toFixed(2)+"."; 
+  document.getElementById("answer3").innerHTML = "Therefore, this means that the vertex of this equation is ("+axisOfSymm.toFixed(2)+","+yCoordinate.toFixed(2)+")."
 }
 

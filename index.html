@@ -32,29 +32,31 @@
           <span class = "mdl-layout-title">Axis of symmetry and y-coordinate of the Vertex (standard form calculator) </span>         
         </div>       
       </header>
-      <!--Input and Textfield code-->
+      <!--Input and Textfield code for Standard Quadratic Equation-->
       <center>
         <br>
-        <p>With this calculator, which was coded with Javascript, you will be able to solve for the axis of symmetry as well as the y-coordinate of the vertex from a quadratic equation in standard form </p>
+        <p>With this calculator, which was coded with Javascript, you can solve for the axis of symmetry and the y-coordinate of the vertex from a quadratic equation in standard form. </p>
         <h3>Please enter the following:</h3>
-        <form action="javascript:calculateVolumeSurfaceArea()">
-          <label for="coefficient-a">Length (cm):</label>
-          <input type="number" id="coefficient-a" step=".001" placeholder="Enter the length of your prism"><br><br>
-          <label for="coefficient-b">Height (cm):</label>
-          <input type="number" id="coefficient-b" step=".001" placeholder="Enter the width of your prism"><br><br>
-          <label for="constant-c">Width (cm):</label>
-          <input type="number" id="constant-c" step=".001" placeholder="Enter the height of your prism"><br><br>
+        <form action="javascript:calculateVertexAxisOfSymm()">
+          <label for="coefficient-a">Coefficient a:</label>
+          <input type="number" id="coefficient-a" step=".01" placeholder="Enter the first coefficient"><br><br>
+          <label for="coefficient-b">Coefficient b:</label>
+          <input type="number" id="coefficient-b" step=".01" placeholder="Enter the second coefficient"><br><br>
+          <label for="constant-c">Constant c:</label>
+          <input type="number" id="constant-c" step=".01" placeholder="Enter the constant"><br><br>
         <!-- Accent-colored raised button -->
-        <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent" onclick ="calculateVolumeSurfaceArea()()">
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent" onclick ="calculateVertexAxisOfSymm()()">
           Calculate
         </button>
         </form>
-        <!-- Create a space where the user information will be displayed -->
+        <!-- Space where the user information will be displayed -->
         <div id="answer1">
         </div>
         <div id="answer2">
         </div>
-        <img src="./images/standard-form-of-quadratic-equation.png" alt="Quaddratic Equation" height="500" length="750">
+        <div id="answer3">
+        </div>
+        <img src="./images/standard-form-of-quadratic-equation.png" alt="Quadratic Equation" height="500" length="750">
         <!-- MDL Progress Bar with Indeterminate Progress -->
         <div id="p2" class="mdl-progress mdl-js-progress mdl-progress__indeterminate"></div>
       </center>
